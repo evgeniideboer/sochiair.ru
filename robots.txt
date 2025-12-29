@@ -1,0 +1,12 @@
+User-agent: Yandex
+Disallow: /*utm_
+
+
+User-agent: Googlebot
+Disallow: /*utm_
+
+User-agent: *
+Allow: /*utm_
+
+
+Sitemap: https://sochiair.ru/sitemap.xml

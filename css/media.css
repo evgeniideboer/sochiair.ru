@@ -1,0 +1,61 @@
+@media (max-width: 1024px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .advantages-list {
+    grid-template-columns: 1fr;
+  }
+
+  @media (max-width: 900px) {
+    .project-card {
+      grid-template-columns: 1fr;
+    }
+
+    .project-card__image img {
+      max-height: 220px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  nav a {
+    font-size: 16px;
+    padding: 0 3px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .hero-bg {
+    background-repeat: no-repeat;
+    max-height: 25vh;
+  }
+
+  .hero-content {
+    padding: 2px 2px;
+  }
+
+  section {
+    padding: 60px 0;
+  }
+
+  .messenger-bar__title {
+    font-size: 0;
+  }
+
+  .messenger-bar {
+    right: auto;
+    gap: 25px;
+  }
+
+  footer {
+    padding: 20px 20px;
+  }
+}

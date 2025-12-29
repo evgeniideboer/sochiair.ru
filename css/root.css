@@ -1,0 +1,20 @@
+:root {
+  --color-bg-main: #ffffff;
+  --color-bg-soft: #f5f7f8;
+
+  --color-primary: #3a6f8f;
+  --color-accent: #d8a15a;
+
+  --color-text-main: #1f2a33;
+  --color-text-muted: #5f6b73;
+  --color-text-gray: #374151;
+
+  --color-border-light: #e5e7eb;
+
+  --color-dark: #1b2a34;
+  --color-dark-rgb: 27, 42, 52;
+
+  --color-whatsapp: #22c55e;
+  --color-telegram: #0ea5e9;
+  --color-call: #374151;
+}
