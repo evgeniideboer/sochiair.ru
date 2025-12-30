@@ -20,8 +20,22 @@
 
 @media (max-width: 600px) {
   header {
-    flex-direction: column;
-    gap: 16px;
+    justify-content: center;
+  }
+
+  .header__nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+
+  .header__nav a {
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .header__logo {
+    display: none;
   }
 
   nav a {
@@ -46,16 +60,31 @@
     padding: 60px 0;
   }
 
-  .messenger-bar__title {
-    font-size: 0;
+  footer {
+    padding: 20px 20px;
   }
 
   .messenger-bar {
-    right: auto;
-    gap: 25px;
+    right: 10px;
+    bottom: 24px;
+
+    gap: 10px;
+    padding: 14px 14px;
+
+    border-radius: 22px;
   }
 
-  footer {
-    padding: 20px 20px;
+  .messenger-bar__title {
+    font-size: 18px;
+  }
+
+  .messenger-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .messenger-bar img {
+    width: 40px;
+    height: 40px;
   }
 }

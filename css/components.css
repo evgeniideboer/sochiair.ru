@@ -9,6 +9,21 @@
   }
 }
 
+@keyframes messengerPulse {
+  0% {
+    transform: scale(1);
+  }
+  6% {
+    transform: scale(1.12);
+  }
+  12% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .messenger-bar {
   position: fixed;
   right: 24px;
@@ -37,16 +52,17 @@
 }
 
 .messenger-bar__title {
+  display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 500;
   color: var(--color-text-main);
 }
 
 .messenger-btn {
-  width: 32px;
-  height: 32px;
+  width: 55px;
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,30 +72,37 @@
   box-shadow: 0 8px 18px rgba(var(--color-dark), 0.15);
 
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  animation: messengerPulse 3.8s ease infinite;
+  will-change: transform;
 }
 
 .messenger-bar img {
-  width: 30px;
-  height: 30px;
+  width: 55px;
+  height: 55px;
   fill: currentColor;
   opacity: 0.85;
 }
 
 .messenger-btn.call {
   background-color: var(--color-call);
+  animation-delay: 0s;
 }
 
 .messenger-btn.whatsapp {
   background-color: var(--color-whatsapp);
+  animation-delay: 0.9s;
 }
 
 .messenger-btn.telegram {
   background-color: var(--color-telegram);
+  animation-delay: 1.8s;
 }
 
 .messenger-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 26px rgba(var(--color-dark), 0.15);
+  animation-play-state: paused;
 }
 
 .projects {
