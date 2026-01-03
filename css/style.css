@@ -27,7 +27,6 @@ nav ul {
   display: flex;
   gap: 28px;
   list-style: none;
-  
 }
 
 nav a {
@@ -94,7 +93,7 @@ section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  /* max-width: 1200px; */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 60px;
 }
@@ -179,13 +178,13 @@ address a {
 }
 
 .footer {
-  background-color: var(--color-dark); 
-  border-top: 1px solid rgba(var(--color-light-rgb), 0.1); 
+  background-color: var(--color-dark);
+  border-top: 1px solid rgba(var(--color-light-rgb), 0.1);
   padding: 24px 20px;
   text-align: center;
   font-size: 14px;
-  color: rgba(var(--color-light-rgb), 0.7); 
-  box-shadow: 0 -4px 12px rgba(var(--color-dark-rgb), 0.3); 
+  color: rgba(var(--color-light-rgb), 0.7);
+  box-shadow: 0 -4px 12px rgba(var(--color-dark-rgb), 0.3);
 }
 
 .footer__container {
@@ -205,7 +204,6 @@ address a {
 }
 
 .content-wrapper {
-   margin: 0 auto;    
+  margin: 0 auto;
   padding: 60px 60px 0 60px;
-
 }

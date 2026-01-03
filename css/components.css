@@ -32,7 +32,7 @@
 
   display: flex;
   gap: 14px;
-  padding: 14px 14px;
+  padding: 12px 12px;
 
   background-color: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(8px);
@@ -53,9 +53,10 @@
 
 .messenger-bar__title {
   display: flex;
+  width: min-content;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 500;
   color: var(--color-text-main);
 }
@@ -105,65 +106,85 @@
   animation-play-state: paused;
 }
 
-.projects {
+.svc {
   width: 100%;
+  background-color: var(--color-bg-soft);
 }
 
-.projects h1 {
-  margin-bottom: 40px;
-}
-
-.projects > h1,
-.project-card {
+.svc__title {
   max-width: 92%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin: 0 auto 50px;
+  padding: 0 40px;
 }
 
-.project-card {
+.svc-row {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 60px 20px;
+  position: relative;
   display: grid;
-  grid-template-columns: 420px 1fr;
-  gap: 32px;
-
-  padding: 32px;
-  margin-bottom: 40px;
-
-  background-color: var(--color-bg-main);
-  border: 1px solid var(--color-border-light);
-  border-radius: 16px;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 38px;
+  align-items: start;
 }
 
-.project-card__image img {
-  width: 100%;
-  height: 100%;
-  max-height: 260px;
-
-  object-fit: cover;
-  border-radius: 12px;
+.svc-row--reverse {
+  direction: rtl;
 }
 
-.project-card__title {
-  margin-bottom: 16px;
-  padding-bottom: 12px;
+.svc-row--reverse > * {
+  direction: ltr;
+}
 
-  font-size: 22px;
+.svc-row__media img {
+  width: 85%;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.svc-row__body h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
   font-weight: 600;
-
-  border-bottom: 1px solid var(--color-border-light);
 }
 
-.project-card__content p {
+.svc-row__body ul {
+  padding-left: 20px;
+}
+
+.svc-row__body li {
   margin-bottom: 12px;
   line-height: 1.6;
-  color: var(--color-text-gray);
 }
 
-.project-card__content p:last-child {
-  margin-bottom: 0;
+.svc-row::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-border-light);
 }
 
-.project-card:hover {
-  box-shadow: 0 12px 30px rgba(var(--color-dark-rgb), 0.15);
+.svc-row:first-of-type::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-border-light);
+}
+
+.svc-row__body ul {
+  padding-left: 24px;
+}
+
+.svc-row__body li {
+  font-size: 24px;
+  line-height: 1.65;
+  margin-bottom: 10px;
 }
